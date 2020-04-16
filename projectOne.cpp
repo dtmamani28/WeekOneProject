@@ -50,9 +50,13 @@ int main() {
 	std::cout << "]\n";
 
 	std::cout << "colors reversed: [\n";
-	for (int i = 1; i < colors.size(); i++) {
-		std::cout << "	" << colors.at(colors.size()-i) << "\n";
+	std::reverse(colors.begin(), colors.end());
+	for (int i = 0; i < colors.size(); i++) {
+		std::cout << "	" << colors.at(i) << "\n";
 	}
+	/*for (int i = 1; i < colors.size(); i++) {
+		std::cout << "	" << colors.at(colors.size()-i) << "\n";
+	}*/
 	std::cout << "]\n";
 
 	auto tempLocate = colors.at(0);
