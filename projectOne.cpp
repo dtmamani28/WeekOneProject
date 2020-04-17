@@ -67,6 +67,9 @@ int main() {
 			tempLocate = colors.at(i);
 		}
 	}
+
+	//auto minSum = std::min_element(colors.at(i).begin(), colors.end());
+
 	std::cout << "the darkest color is " << tempLocate <<"\n";
 
 	std::sort(colors.begin(), colors.end(), less_than_blue());
@@ -75,4 +78,6 @@ int main() {
 	for (int i = 0; i < colors.size(); i++) {
 		std::cout << "	" << colors.at(i) << "\n";
 	}
+
+
 }
